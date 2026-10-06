@@ -1,0 +1,80 @@
+{
+    "best_model_name": "Random Forest",
+    "feature_cols": [
+        "attendance_rate",
+        "study_hours_weekly",
+        "past_exam_score",
+        "commute_distance_km",
+        "internet_access",
+        "parental_involvement",
+        "financial_aid_needed",
+        "extracurricular"
+    ],
+    "metrics": {
+        "Logistic Regression": {
+            "accuracy": 0.876,
+            "precision": 0.8029,
+            "recall": 0.7586,
+            "f1_score": 0.7801,
+            "roc_auc": 0.9362,
+            "confusion_matrix": [
+                [
+                    328,
+                    27
+                ],
+                [
+                    35,
+                    110
+                ]
+            ]
+        },
+        "Decision Tree": {
+            "accuracy": 0.76,
+            "precision": 0.594,
+            "recall": 0.5448,
+            "f1_score": 0.5683,
+            "roc_auc": 0.7943,
+            "confusion_matrix": [
+                [
+                    301,
+                    54
+                ],
+                [
+                    66,
+                    79
+                ]
+            ]
+        },
+        "Random Forest": {
+            "accuracy": 0.842,
+            "precision": 0.8173,
+            "recall": 0.5862,
+            "f1_score": 0.6827,
+            "roc_auc": 0.8999,
+            "confusion_matrix": [
+                [
+                    336,
+                    19
+                ],
+                [
+                    60,
+                    85
+                ]
+            ]
+        }
+    },
+    "feature_importances": {
+        "past_exam_score": 0.2867,
+        "attendance_rate": 0.2715,
+        "study_hours_weekly": 0.1626,
+        "commute_distance_km": 0.1555,
+        "parental_involvement": 0.0564,
+        "financial_aid_needed": 0.0293,
+        "internet_access": 0.0234,
+        "extracurricular": 0.0146
+    },
+    "target_classes": {
+        "0": "On Track",
+        "1": "At Risk"
+    }
+}
